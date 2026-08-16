@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="header">
+
+        <h1 id="main-title">Alles Gute zum Bestehen der Bachelorarbeit!🎉</h1>
+
+        <img id="profilbild" src="./img/sonnebumi_3.JPG" />
+
+        <h2 class="hammer">Du bist der Hammer!</h2>
+
+    </div>
+    <div id="gift_1">
+        <h3 class="hammer">Hier gibt's ne kleine Überraschung von dein Sonnebumi!</h3>
+        <img id="gift" src="/img/gift-box-cover.jpg"> 
+
+        <video id="gift-video" controls>
+        <source src="./img/Eli Preiss & Makko - Sailor Moon - Eli Preiss (480p).mp4" type="video/mp4">
+
+
+        Dein Browser unterstützt dieses Video nicht.
+
+
+        </video>
+
+    <h2 id="ticket-text" class="hammer">Karten für Eli Preis Konzert! 🎟️✨</h2>
+
+    </div>
+
+
+    <script>
+    const giftImage = document.getElementById('gift');
+    const giftVideo = document.getElementById('gift-video');
+
+    const ticketText = document.getElementById('ticket-text');
+
+    let isOpened = false;
+
+    giftImage.addEventListener('click', function() {
+        if (!isOpened) {
+            // 1. Bild um 90 Grad drehen (Einklappen)
+            giftImage.style.transform = "rotateY(90deg)";
+
+            // 2. Nach 300ms (wenn das Bild eingeklappt ist) Bild gegen Video tauschen
+            setTimeout(function() {
+                giftImage.style.display = "none";      // Bild ausblenden
+                giftVideo.style.display = "block";     // Video einblenden
+                
+                ticketText.style.display = "block";
+                // Video abspielen (funktioniert mit Ton, da der Nutzer geklickt hat!)
+                giftVideo.play();
+                
+                isOpened = true;
+            }, 300);
+        }
+    });
+</script>
+       
+        
+    
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+body{
+
+    font-family: figtree, sans-serif;
+   
+    color: white;
+    margin: 0;
+
+    /* Pfad zu deinem lokalen GIF (relativ zur CSS- oder HTML-Datei) */
+  background-image: url(./img/giphy_2\ .gif);
+
+  /* Sorgt dafür, dass das Bild den gesamten Bereich abdeckt */
+  background-size: cover;
+
+  /* Verhindert, dass das GIF wiederholt wird, falls es zu klein ist */
+  background-repeat: no-repeat;
+
+  /* Zentriert das Bild horizontal und vertikal */
+  background-position: center center;
+
+  /* Optional: Fixiert das GIF, damit es beim Scrollen stehen bleibt */
+  background-attachment: fixed;
+  
+  /* Fallback-Farbe, falls das GIF mal nicht lädt */
+  background-color: white;
+    
+    
+}
+#header{
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /* background-color: #ffd166; */
+
+}
+#profilbild{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #ef476f;
+}
+h2, h3, h4{
+    text-shadow: 0px 0px 1px black;
+}
+h1{
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+}
+
+#main-title{
+    color: #073b4c;
+
+}
+.hammer{
+    background-color: #ef476f;
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    margin:10px;
+    margin-bottom: 10px;
+    
+}
+
+#gift_1{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* background-color: #073b4c; */
+    padding-top: 15px;
+    padding-bottom: 50px;
+
+    
+}
+#gift {
+    width: 600px;
+    border: 4px solid #ef476f;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#gift:hover {
+    transform: scale(1.05);
+}
+
+/* NEU: Styling für das Video */
+#gift-video {
+    display: none; /* Zu Beginn unsichtbar */
+    width: 600px;
+    border: 4px solid #ef476f;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+#ticket-text {
+    display: none; /* Sorgt dafür, dass der Text am Anfang nicht da ist */
+    margin-top: 20px; /* Ein kleiner Abstand zum Video darüber */
+}
+/* Bubblegum Pink
+#ef476f
+Bubbly, confection pink bursts with girlish charm; lively, youthful and sweet, sparkling with carefree energy.
+~Royal Gold
+#ffd166
+Glowing and regal, this yellow shade beams with luxury, prestige, and a touch of radiant vintage elegance.
+~Emerald
+#06d6a0
+Radiates brilliance and clarity, like dewy grass in first sunlight, promising harmony, vitality, and success.
+~Ocean Blue
+#118ab2
+Vivid aquatic shade mirroring the open sea, evokes wanderlust, exploration, and boundless inspiration.
+~Dark Teal
+#073b4c
+Deep, mysterious teal conjures ocean depths, blending sophistication, intrigue, and a timeless cool calm. */
+
